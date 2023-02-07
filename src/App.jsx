@@ -10,7 +10,7 @@ const App = () => {
 	]);
 
 	const [inputValue, setInputValue] = useState('');
-	const [totalItemCount, setTotalItemCount] = useState(6);
+	const [totalItemCount, setTotalItemCount] = useState(0);
 
 	const handleAddButtonClick = () => {
 		const newItem = {
