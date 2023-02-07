@@ -1,8 +1,9 @@
 .btn-close {
+    font-size: 20px;
     color: red;
     opacity: 50%;
-    width: 500px;
-    height: 100px;
+    width: 400px;
+    height: 150px;
     position: fixed;
     margin-bottom: 400px;
     z-index: 2;
