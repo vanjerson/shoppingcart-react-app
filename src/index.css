@@ -5,17 +5,19 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Poppins';
   color: white;
 }
 
 .App {
-  font-family: sans-serif;
+  font-family: 'Poppins';
   text-align: center;
 }
 
 .app-background {
-  background-color: #3d3e3f;
+  background-image: url(https://eskipaper.com/images/dark-wallpaper-12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +25,7 @@ body {
 }
 
 .main-container {
+  opacity: 50%;
   background-color: #332f2e;
   width: 500px;
   height: min-content;

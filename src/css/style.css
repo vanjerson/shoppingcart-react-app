@@ -1,0 +1,27 @@
+.btn-close {
+    color: red;
+    opacity: 50%;
+    width: 500px;
+    height: 100px;
+    position: fixed;
+    margin-bottom: 400px;
+    z-index: 2;
+  }
+
+  .alert {
+    position: fixed;
+    color: red;
+    z-index: 2;
+  }
+
+  h2 {
+    font-family: 'Poppins';
+  }
+
+  .total {
+    font-family: 'Poppins';
+  }
+
+  .add-item-input {
+    font-family: 'Poppins';
+  }
