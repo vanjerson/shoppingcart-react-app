@@ -85,13 +85,14 @@ const App = () => {
 
     <div className='App'>
 
-
-
 		<div className='app-background'>
 
     {showAlert && (
-    <div type="button" className="btn-close" data-bs-dismiss="alert" data-bs-target="#my-alert" aria-label="Close">
-        <button onClick={() => closeAlert()} type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <div type="button" className="btn-close" data-bs-dismiss="alert" 
+    data-bs-target="#my-alert" aria-label="Close">
+        <button onClick={() => closeAlert()} type="button" 
+        className="btn-close" data-bs-dismiss="alert" 
+        aria-label="Close"></button>
         <strong>Oh snap!</strong> Write something and try adding again.
     </div>
   )}
@@ -99,14 +100,18 @@ const App = () => {
 			<div className='main-container'>
         <h2>Black Market</h2>
 				<div className='add-item-box'>
-					<input value={inputValue} onChange={(event) => setInputValue(event.target.value)} className='add-item-input' placeholder='Add an item...' />
+					<input value={inputValue} 
+          onChange={(event) => setInputValue(event.target.value)} 
+          className='add-item-input' placeholder='Add an item...' />
           
-					<FontAwesomeIcon icon={faPlus} onClick={() => handleAddButtonClick()} />
+					<FontAwesomeIcon icon={faPlus} 
+          onClick={() => handleAddButtonClick()} />
 				</div>
 				<div className='item-list'>
 					{items.map((item, index) => (
 						<div className='item-container'>
-							<div className='item-name' onClick={() => toggleComplete(index)}>
+							<div className='item-name' 
+              onClick={() => toggleComplete(index)}>
 								{item.isSelected ? (
 									<>
 										<FontAwesomeIcon icon={faCheckCircle} />
@@ -121,14 +126,17 @@ const App = () => {
 							</div>
 							<div className='quantity'>
 								<button>
-									<FontAwesomeIcon icon={faChevronLeft} onClick={() => handleQuantityDecrease(index)} />
+									<FontAwesomeIcon icon={faChevronLeft} 
+                  onClick={() => handleQuantityDecrease(index)} />
 								</button>
 								<span> {item.quantity} </span>
 								<button>
-									<FontAwesomeIcon icon={faChevronRight} onClick={() => handleQuantityIncrease(index)} />
+									<FontAwesomeIcon icon={faChevronRight} 
+                  onClick={() => handleQuantityIncrease(index)} />
 								</button>
                 <button>
-									<FontAwesomeIcon icon={faTrashCan} onClick={() => deleteItem(index)} />
+									<FontAwesomeIcon icon={faTrashCan} 
+                  onClick={() => deleteItem(index)} />
 								</button>
 							</div>
 						</div>
@@ -139,6 +147,7 @@ const App = () => {
 			</div>
 		</div>
   </div>
+  
 	);
 };
 
